@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
+/*
+Se citeşte de la tastatură un număr natural n (n>=100). Să se determine dacă numărul dat este număr
+„munte-vale”. Un număr natural este „munte-vale” dacă cifrele din număr sunt în ordine crescătoare
+până la o anumită poziţie, iar cifrele care urmează sunt în ordine descrescătoare până la sfârşit.
+Exemple pentru numere „munte-vale”: 24521, 18942, 16432.
+*/
+
+
 int main(){
     int n,x;
     cin >> n;

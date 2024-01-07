@@ -4,6 +4,14 @@ using namespace std;
 
 ifstream fin("numere.txt");
 
+/*
+Fişierul text numere.txt conţine pe o singură linie, separate prin câte un spaţiu, cel mult 100 de
+numere întregi, fiecare număr având cel mult 4 cifre. Scrieţi un program care citeşte numerele din
+fişierul numere.txt şi afişează pe ecran, separate prin câte un spaţiu, în ordine crescătoare, toate
+numerele naturale nenule din fişier. Dacă nu există astfel de numere se va afişa pe ecran mesajul NU
+EXISTA.
+*/
+
 int main(){
     int nr, v[101], ind=0;
     while(fin >> nr){

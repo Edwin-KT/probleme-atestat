@@ -4,6 +4,11 @@ using namespace std;
 
 ofstream fout("matrice.txt");
 
+/*
+De la tastatură se citesc 2 numere a și b, (a<b), de maxim 9 cifre fiecare. Să se scrie în fișierul
+fibo.txt toate numerele din șirul lui Fibonacci care sunt în intervalul [a,b].
+*/
+
 int main(){
     int a, b, f1=1,f2=1,f3=0;
     cin >> a >> b;

@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+/*
+Se citesc de la tastatură două tablouri unidimensionale cu elementele în ordine crescătoare, a cu n
+elemente, respectiv b cu m elemente. Să se determine din cele două tablouri, un al treilea tablou
+unidimensional în mod optim, care să conţină toate elementele celor două tablouri tot în ordine
+crescătoare. Tabloul nou format va fi afișat în fișierul ordonat.txt.
+*/
+
 int main(){
     int n, m, a[1001],b[1001],c[2002], ind=0;
     cin >> n;
