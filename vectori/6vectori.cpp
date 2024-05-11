@@ -22,22 +22,26 @@ Exemplu:
 Se va afișa 8 15. [8,15] și [17,24] au același număr de elemente întregi, dar 8 e mai mic
 */
 
-int main(){
-    int n, a, b, max, nr1,nr2;
+int main()
+{
+    int n, a, b, max, nr1, nr2;
     fin >> n;
-    for(int i=1;i<=n;++i){
+    for (int i = 1; i <= n; ++i)
+    {
         int nr;
         fin >> a >> b;
-        if(a < 0 and b < 0)
-            nr = abs(b+a);
+        if (a < 0 and b < 0)
+            nr = abs(b + a);
         else
-            nr = b-a;
-        if(i==1){
+            nr = b - a;
+        if (i == 1)
+        {
             max = nr;
             nr1 = a;
             nr2 = b;
         }
-        else if((nr >= max) and b < nr2){
+        else if ((nr >= max) and b < nr2)
+        {
             max = nr;
             nr1 = a;
             nr2 = b;

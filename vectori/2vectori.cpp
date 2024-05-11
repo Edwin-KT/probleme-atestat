@@ -12,24 +12,29 @@ numerele naturale nenule din fişier. Dacă nu există astfel de numere se va af
 EXISTA.
 */
 
-int main(){
-    int nr, v[101], ind=0;
-    while(fin >> nr){
-        if(nr > 0)  
-            v[++ind]=nr;
+int main()
+{
+    int nr, v[101], ind = 0;
+    while (fin >> nr)
+    {
+        if (nr > 0)
+            v[++ind] = nr;
     }
-    if(ind == 0)
+    if (ind == 0)
         cout << "NU EXISTA";
-    else{
-        for(int i=1;i<ind;++i)
-            for(int j=i+1;j<=ind;++j){
-                if(v[i] > v[j]){
+    else
+    {
+        for (int i = 1; i < ind; ++i)
+            for (int j = i + 1; j <= ind; ++j)
+            {
+                if (v[i] > v[j])
+                {
                     int aux = v[i];
                     v[i] = v[j];
                     v[j] = aux;
                 }
             }
-        for(int i=1;i<=ind;++i)
+        for (int i = 1; i <= ind; ++i)
             cout << v[i] << " ";
     }
 

@@ -15,15 +15,17 @@ Exemplu: dacă fişierul cifre.txt are următorul conţinut:
 atunci pe ecran se vor afişa numerele 249 243
 */
 
-int main(){
+int main()
+{
     int n, nr;
     fin >> n;
-    for(int i=1;i<=n;++i){
+    for (int i = 1; i <= n; ++i)
+    {
         fin >> nr;
-        if(nr >= 100 and nr <= 900)
-            if(nr%10 != (nr/10)%10 and (nr/10)%10 != (nr/100)%10 and nr%10!=(nr/100)%10)
+        if (nr >= 100 and nr <= 900)
+            if (nr % 10 != (nr / 10) % 10 and (nr / 10) % 10 != (nr / 100) % 10 and nr % 10 != (nr / 100) % 10)
                 cout << nr << " ";
     }
 
-    return 0;   
+    return 0;
 }
